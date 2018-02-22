@@ -1,5 +1,6 @@
 package com.github.henriquedreyer.models.dao;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class InMemoryDao implements DAOManager{
 		return null;
 	}
 
-	public List<Object> getAll() {
+	public List<? extends Serializable> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}

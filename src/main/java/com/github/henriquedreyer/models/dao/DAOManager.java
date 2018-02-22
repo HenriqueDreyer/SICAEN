@@ -1,5 +1,6 @@
 package com.github.henriquedreyer.models.dao;
 
+import java.io.Serializable;
 import java.util.List;
 
 import com.github.henriquedreyer.models.customers.Customer;
@@ -14,6 +15,6 @@ public interface DAOManager {
 	
 	Object getById(Long id);
 	
-	List<Object> getAll();
+	List<? extends Serializable> getAll();
 
 }

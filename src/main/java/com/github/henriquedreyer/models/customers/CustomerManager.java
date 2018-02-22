@@ -33,8 +33,8 @@ public class CustomerManager implements ModelManager<Customer>{
 	}
 
 	public List<Customer> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return (List<Customer>) daoManager.getAll();
 	}
 
 }
